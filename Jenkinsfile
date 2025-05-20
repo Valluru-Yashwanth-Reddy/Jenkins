@@ -15,6 +15,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Valluru-Yashwanth-Reddy/Jenkins']])
                 // Build the Docker image
                 sh "docker build -t ${DOCKER_IMAGE}:${IMAGE_TAG} ."
             }
