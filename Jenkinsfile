@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'your-dockerhub-username/python_jenkins'  // Change to your Docker Hub username and image name
+        DOCKER_IMAGE = 'yashwanth2003/python_jenkins'  // Change to your Docker Hub username and image name
         IMAGE_TAG = 'latest'
     }
 
